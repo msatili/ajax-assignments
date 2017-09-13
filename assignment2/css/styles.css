@@ -1,0 +1,139 @@
+
+/********** Base styles **********/
+body {
+    background-color: #F7F7FF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    color: black;
+}
+
+section {
+    position: relative;
+    background-color: #C6C8EE;
+    border: 1px solid black;
+}
+
+h1 {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 175%;
+    /* color: #7B6EDD; */
+}
+
+.title {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    float: right;
+    width: 200px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 125%;
+    font-weight: bold;
+    color: white;
+}
+
+#chicken { 
+    background-color: #BD6B73;
+}
+
+#beef { 
+    background-color: #9B3C57;
+    /* color: white; */
+}
+
+#sushi { 
+    background-color: #A30B37;
+}
+
+.mobile { 
+    display: none;
+}
+
+.description {
+    position: relative;
+    padding: 10px;
+    height: 200px;
+    margin: 8% 10px 25px 10px;
+    overflow: hidden;
+}
+
+.description:hover {
+    cursor: ew-resize;
+    overflow-y: auto;
+}
+
+.sm-view {
+    display: none;
+}
+
+/* Simple Responsive Framework. */
+.row {
+    width: 100%;
+}
+
+/********** Desktop only **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 31%;
+        margin: 1%;
+    }
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 48%;
+        margin: 1%;
+    }
+    .col-md-12 {
+        width: 98%;
+        margin: 1%;
+    }
+}
+
+/********** Mobile devices only **********/
+@media (max-width:767px) {
+    .col-sm-12 {
+        float: left;
+        width: 98%;
+        margin: 1%;
+    }
+    h1 { 
+        margin-bottom: 15px;
+        text-align: left;
+        font-size: 135%;
+        font-family: Times;
+        margin: 20px 10px 10px 20px;
+    }
+    .mobile {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid black;
+        font-size: 125%;
+        font-weight: bold;
+        color: white;
+    }
+    .lg-view {
+        display: none;
+    }
+    .sm-view {
+        display: inline-block;
+    }
+    .title { 
+        display: none;
+    }
+}
