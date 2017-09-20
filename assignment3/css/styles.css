@@ -29,10 +29,6 @@ body {
   line-height: .75;
 }
 
-#collapsable-nav {
-  background-color: #D8D8D8;
-}
-
 #nav-list {
   margin-top: 10px;
 }
@@ -62,9 +58,10 @@ h2 {
 
 .subcontent {
   border: 2px solid #3F0C1F;
-  padding: 10px;
+  /*padding: 10px;*/
   height: 700px;
   margin: 10px;
+  margin-bottom: 25px;
   overflow: hidden;
 }
 
@@ -111,6 +108,9 @@ h3 {
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  #collapsable-nav {
+    background-color: #D8D8D8;
   }
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
