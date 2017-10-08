@@ -22,8 +22,6 @@ function LunchCheckController($scope) {
     var lunchItems = string.split(",").map(item => item.trim());
     lunchItems = lunchItems.filter(String);
 
-    console.log(lunchItems);
-
     if(string === "" || lunchItems.length === 0){
       return "Please enter data first";
     }
