@@ -1,0 +1,10 @@
+<br><br>
+<h3 ng-if="narrow.found">Search Results</h3>
+<div id="noResults" ng-if="narrow.found.length === 0">Nothing found</div>
+<ul>
+  <li ng-repeat="foundItem in narrow.found">
+      {{ foundItem.short_name }}: {{ foundItem.name }}<br>
+      {{ foundItem.description }}<br>
+    <button ng-click="narrow.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+</ul>
