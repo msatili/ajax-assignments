@@ -3,11 +3,9 @@
 <br>
 <ul>
 
-  <li ng-repeat="item in categoryList.items"
->
+  <li ng-repeat="item in categoryList.items">
     <a ui-sref="items({category: item.short_name })">
-
-    {{ item.short_name}}: {{ item.name }}
+    {{ item.name }} ({{ item.short_name}})
 </a>
   </li>
 
