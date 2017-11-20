@@ -3,11 +3,9 @@
 <br>
 <ul>
 
-  <li ng-repeat="item in itemList.items"
->
-
-    {{ item.name }}<br>{{ item.description }}
-</div>
+  <li ng-repeat="item in itemList.items">
+    <div id="itemName">{{ item.name }}</div>
+    <div id="itemDescription">{{ item.description }}</div>
   </li>
 
 </ul>

@@ -1,16 +1,12 @@
 body {
-  font-size: 1.2em;
+	font-size: 1.2em;
+	font-family: 'Domine', serif;
 }
 
-div.tabs > a, div.tabs > button {
-  margin-right: 10px;
-  font-size: 1.2em;
+#itemDescription {
+	font-style: italic;;
 }
 
-div.tabs {
-  margin-bottom: 10px;
-}
-
-.activeTab {
-  font-weight: bold;
+#itemName {
+	font-weight: bold;
 }
