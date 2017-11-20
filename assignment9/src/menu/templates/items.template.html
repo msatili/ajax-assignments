@@ -1,7 +1,7 @@
 <h1>Welcome to our Restaurant!</h1>
 <a ui-sref="home">Home</a> > <a ui-sref="categories">Categories</a> > Items
-<br>
-<div ng-repeat="item in itemList.items">
+<br><br>
+<div id="list" ng-repeat="item in itemList.items">
     <div id="itemName">{{ item.name }}</div>
     <div id="itemDescription">{{ item.description }}</div>
 </div>

@@ -3,6 +3,10 @@ body {
 	font-family: 'Domine', serif;
 }
 
+#list {
+	padding-left: 10px;
+}
+
 #itemDescription {
 	font-style: italic;;
 }
