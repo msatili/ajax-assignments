@@ -1,0 +1,14 @@
+<h1>Welcome to our Restaurant!</h1>
+<a ui-sref="home">Home</a> > Categories
+<br>
+<ul>
+
+  <li ng-repeat="item in categoryList.items"
+>
+    <a ui-sref="items({category: item.short_name })">
+
+    {{ item.short_name}}: {{ item.name }}
+</a>
+  </li>
+
+</ul>
