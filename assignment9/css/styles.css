@@ -15,3 +15,15 @@ body {
 #itemName {
 	font-weight: bold;
 }
+
+.error {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.loading-icon {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+}
