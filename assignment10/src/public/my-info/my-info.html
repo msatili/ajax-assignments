@@ -1,12 +1,12 @@
 <div class="container">
 	<h2  class="text-center">My Info</h2>
 	<div ng-if="myInfoCtrl.userInfo.completed">
-		First Name: {{ myInfoCtrl.userInfo.firstName }} <br>
-		Last Name: {{ myInfoCtrl.userInfo.lastName }}<br>
-		Email: {{ myInfoCtrl.userInfo.email }}<br>
-		Phone: {{ myInfoCtrl.userInfo.phone }}<br>
-		Favorite dish: {{ myInfoCtrl.itemInfo.name }}<br>
-		{{ myInfoCtrl.itemInfo.description }}<br>
+		<b>First Name:</b> {{ myInfoCtrl.userInfo.first_name }} <br>
+		<b>Last Name:</b> {{ myInfoCtrl.userInfo.last_name }}<br>
+		<b>Email:</b> {{ myInfoCtrl.userInfo.email }}<br>
+		<b>Phone:</b> {{ myInfoCtrl.userInfo.phone }}<br>
+		<b>Favorite dish:</b> {{ myInfoCtrl.userInfo.favoriteData.name }}<br>
+		{{ myInfoCtrl.userInfo.favoriteData.description }}<br>
 		<img class="img-responsive" width="250" height="150" ng-src="{{myInfoCtrl.basePath}}/images/{{myInfoCtrl.userInfo.favorite}}.jpg" alt="{{myInfoCtrl.userInfo.favorite}}">
 	</div>
 
